@@ -6,80 +6,119 @@
   </head>
 
   <body>
-    <header class="page-header page-header--page-catalog">
+    <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logotype.png" width="100" height="19" alt="Погнали?">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle hamb-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav__open">
+        <button class="main-nav__toggle  main-nav_toggle--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link text text--s30-wm-c192144-h36" href="about-us.html">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="about-us.html">О сервисе</a>
+              <a class="site-list_link text text--s30-wm-c192144-h36" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+              <a class="site-list__link text text--s30-wm-c192144-h36" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <button class="main-nav__toggle close-button" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         </div>
+        <ul class="main-nav__list user-list user-list--menu-closed">
+          <li class="user-list__item">
+            <a class="user-list__login button button--сffd74b-r30-ac text text--s17-wb-c192144-h30" href="login.html">АВТОРИЗАЦИЯ</a>
+            </li>
+        </ul>
       </nav>
-      <h1 class="page-catalog__title--h1">Попутчики</h1>
+      <section class="page-header__contacts">
+        <h2 class="visually-hidden">Наши контакты:</h2>
+        <ul class="page-header__contacts contacts contacts--on-white">
+          <li class="contacts__phone">
+            <a class="contacts__phone text text--s16-wb-c192144-h22" href="tel:+78125556666">
+              <span class="contacts__phone visually-hidden">Тел.:</span> +7 (812) 555-66-66
+            </a>
+          </li>
+          <li class="contacts__email">
+            <a class="contacts__email text text--s16-wb-c192144-h22" href="mailto:mail@htmlacademy.ru">
+              <span class="contacts__email visually-hidden">Mail to:</span> mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="page-header__social social social--on-white">
+        <h2 class="social__title visually-hidden">Давайте дружить!</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
+      <h1 class="catalog-page-title text text--s36-wb-cffffff-h40">Попутчики</h1>
       <section>
         <!-- Здесь будет форма -->
         <h2 class="visually-hidden">Форма фильтров</h2>
       </section>
-      <section class="travelmates catalog">
-        <h2 class="catalog__title--h2 visually-hidden">Каталог</h2>
+      <section class="travelmates catalog catalog--catalog-page">
+        <h2 class="catalog__title visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <article class="travelmate travelmate--page-catalog travelmate--heart-active">
-              <h3 class="travelmate__name">Таня Фирсова</h3>
-              <img class="travelmate__img" src="user__tanya-firsova--00000001.img" alt="Таня Фирсова">
-              <p class="travelmate__friends">1,5 M</p>
-              <p class="travelmate__in-favorites--yes visually-hidden">в избранном</p>
-              <div class="travelmate__level level level--page-catalog">
+            <article class="travelmate travelmate--catalog-page">
+              <h3 class="travelmate__name text text--s20-wb-c1d2e5b-h20">Таня Фирсова</h3>
+              <img class="travelmate__img" src="user__tanya-firsova-00000001.img" width="70" height="70" alt="Таня Фирсова">
+              <p class="travelmate__friends text text__s14-wb-c161c35-h21">1,5 M</p>
+              <p class="travelmate__in-favorites travelmate__in-favorites--yes">в избранном</p>
+              <div class="travelmate__level level level--catalog-page text text--s15-wr-c444444-h18">
                 <h4 class="level__title visually-hidden">level:</h4>
-                <p class="level__value">99</p>
+                <p class="level__value text text--s24-wb-c1d2e5b-h18">99</p>
               </div>
-              <div class="travelmate__countries">
+              <div class="travelmate__countries countries countries--catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--sri-lanka">
-                      <h4 class="country__name">Шри-Ланка</h4>
+                    <article class="country country--catalog-page country--sri-lanka">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Шри-Ланка</h4>
+                      <img class="country__flag" src="country/flag--sri-lanka.img" widht="26" height="18" alt="Шри-Ланка">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--seychelles">
-                      <h4 class="country__name">Сейшеллы</h4>
+                    <article class="country country--catalog-page  country--seychelles">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Сейшеллы</h4>
+                      <img class="country__flag" src="country/flag--seychelles.img" widht="26" height="18" alt="Сейшеллы">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--thai">
-                      <h4 class="country__name">Тайланд</h4>
+                    <article class="country country--catalog-page  country--thai">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Тайланд</h4>
+                      <img class="country__flag" src="country/flag--thai.img" widht="26" height="18" alt="Таиланд">
                     </article>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__hashtags hashtags--page-catalog">
+              <div class="travelmate__hashtags hashtags hashtags--catalog-page">
                 <h3 class="visually-hidden">xештеги:</h3>
                 <ul class="hashtags__list">
-                  <li class="hashtags__item">#ЗОЖ</li>
-                  <li class="hashtags__item">#ПП</li>
-                  <li class="hashtags__item">#Фитнес</li>
-                  <li class="hashtags__item">#пляж</li>
-                  <li class="hashtags__item">#авокадо</li>
-                  <li class="hashtags__item">#смузи</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#ЗОЖ</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#ПП</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#Фитнес</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#пляж</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#авокадо</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#смузи</li>
                 </ul>
               </div>
               <div class="travelmate__transport transport">
@@ -100,37 +139,39 @@
             </article>
           </li>
           <li class="catalog__item">
-            <article class="travelmate travelmate--page-catalog">
-              <h3 class="travelmate__name">Петя Демин</h3>
-              <img class="travelmate__img" src="user__petya-demin--00000002.img" alt="Петя Демин">
-              <p class="travelmate__friends">150</p>
-              <div class="travelmate__level level level--page-catalog">
+            <article class="travelmate travelmate--catalog-page">
+              <h3 class="travelmate__name text text--s20-wb-c1d2e5b-h20">Петя Демин</h3>
+              <img class="travelmate__img" src="user__petya-demin--00000002.img" width="70" height="70" alt="Петя Демин">
+              <p class="travelmate__friends text text__s14-wb-c161c35-h21">150</p>
+              <div class="travelmate__level level level--catalog-page text text--s15-wr-c444444-h18">
                 <h4 class="level__title">level:</h4>
-                <p class="level__value">80</p>
+                <p class="level__value text text--s24-wb-c1d2e5b-h18">80</p>
               </div>
-              <div class="travelmate__countries">
+              <div class="travelmate__countries countries countries--catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--belgium">
-                      <h4 class="country__name">Бельгия</h4>
+                    <article class="country country--catalog-page country--belgium">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Бельгия</h4>
+                      <img class="country__flag" src="country/flag--belgium.img" widht="26" height="18" alt="Бельгия">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--czechia">
-                      <h4 class="country__name">Чехия</h4>
+                    <article class="country country--catalog-page country--czechia">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Чехия</h4>
+                      <img class="country__flag" src="country/flag--czechia.img" widht="26" height="18" alt="Чехия">
                     </article>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__hashtags hashtags--page-catalog">
+              <div class="travelmate__hashtags hashtags--catalog-page">
                 <h3 class="visually-hidden">xештеги:</h3>
                 <ul class="hashtags__list">
-                  <li class="hashtags__item">#бургер</li>
-                  <li class="hashtags__item">#бар</li>
-                  <li class="hashtags__item">#футбол</li>
-                  <li class="hashtags__item">#концерт</li>
-                  <li class="hashtags__item">#крафт</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#бар</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#бургер</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#футбол</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#концерт</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#крафт</li>
                 </ul>
               </div>
               <div class="travelmate__transport transport">
@@ -153,42 +194,45 @@
             </article>
           </li>
           <li class="catalog__item">
-            <article class="travelmate travelmate--page-catalog">
-              <h3 class="travelmate__name">Марк Смолов</h3>
-              <img class="travelmate__img" src="user__mark-smolov--00000003.img" alt="Марк Смолов">
-              <p class="travelmate__friends">1700</p>
-              <div class="travelmate__level level level--page-catalog">
+            <article class="travelmate travelmate--catalog-page">
+              <h3 class="travelmate__name text text--s20-wb-c1d2e5b-h20">Марк Смолов</h3>
+              <img class="travelmate__img" src="user__mark-smolov--00000003.img" width="70" height="70" alt="Марк Смолов">
+              <p class="travelmate__friends text text__s14-wb-c161c35-h21">1700</p>
+              <div class="travelmate__level level level--catalog-page text text--s15-wr-c444444-h18">
                 <h4 class="level__title">level:</h4>
-                <p class="level__value">25</p>
+                <p class="level__value text text--s24-wb-c1d2e5b-h18">25</p>
               </div>
-              <div class="travelmate__countries">
+              <div class="travelmate__countries countries countries--catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--usa">
-                      <h4 class="country__name">США</h4>
-                    </article>
-                   </li>
-                  <li class="countries__item">
-                    <article class="country country--page-catalog country--australia">
-                      <h4 class="country__name">Австралия</h4>
+                    <article class="country country--catalog-page country--usa">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">США</h4>
+                      <img class="country__flag" src="country/flag--usa.img" widht="26" height="18" alt="США">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--dominiсana">
-                      <h4 class="country__name">Доминикана</h4>
+                    <article class="country country--catalog-page country--australia">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Австралия</h4>
+                      <img class="country__flag" src="country/flag--australia.img" widht="26" height="18" alt="Австралия">
+                    </article>
+                  </li>
+                  <li class="countries__item">
+                    <article class="country country--catalog-page country--dominiсana">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Доминикана</h4>
+                      <img class="country__flag" src="country/flag--dominiсana.img" widht="26" height="18" alt="Доминикана">
                     </article>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__hashtags hashtags--page-catalog">
+              <div class="travelmate__hashtags hashtags hashtags--page-catalog">
                 <h3 class="visually-hidden">xештеги:</h3>
                 <ul class="hashtags__list">
-                  <li class="hashtags__item">#реп</li>
-                  <li class="hashtags__item">#тату</li>
-                  <li class="hashtags__item">#хайпбист</li>
-                  <li class="hashtags__item">#кроссовки</li>
-                  <li class="hashtags__item">#суприм</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">">#реп</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">">#тату</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">">#хайпбист</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">">#кроссовки</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">">#суприм</li>
                 </ul>
               </div>
               <div class="travelmate__transport transport">
@@ -210,37 +254,39 @@
             </article>
           </li>
           <li class="catalog__item">
-            <article class="travelmate travelmate--page-catalog travelmate--online">
-              <h3 class="travelmate__name">Лариса Роговая</h3>
-              <img class="travelmate__img" src="user__larisa-rogovaya--00000004.img" alt="Лариса Роговая">
-              <p class="travelmate__online--yes visually-hidden">online</p>
-              <p class="travelmate__friends">23</p>
-              <div class="travelmate__level level level--page-catalog">
-                <h4 class="level__title">level:</h4>
-                <p class="level__value">50</p>
+            <article class="travelmate travelmate--catalog-page travelmate--online">
+              <h3 class="travelmate__name text text--s20-wb-c1d2e5b-h20">Лариса Роговая</h3>
+              <img class="travelmate__img" src="user__larisa-rogovaya--00000004.img" width="70" height="70" alt="Лариса Роговая">
+              <p class="travelmate__online visually-hidden">online</p>
+              <p class="travelmate__friends text text__s14-wb-c161c35-h21">23</p>
+              <div class="travelmate__level level level--catalog-page text text--s15-wr-c444444-h18">
+                <h4 class="level__title visually-hidden">level:</h4>
+                <p class="level__value text text--s24-wb-c1d2e5b-h18">50</p>
               </div>
-              <div class="travelmate__countries">
+              <div class="travelmate__countries countries countries-catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--uk">
-                      <h4 class="country__name">Великобритания</h4>
+                    <article class="country country--catalog-page country--uk">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Великобритания</h4>
+                      <img class="country__flag" src="country/flag--uk.img" widht="26" height="18" alt="Великобритания">
                     </article>
-                   </li>
+                  </li>
                   <li class="countries__item">
-                    <article class="country country--page-catalog country--germany">
-                      <h4 class="country__name">Германия</h4>
+                    <article class="country country--catalog-page country--germany">
+                      <h4 class="country__name text text--s15-wm-c1d2e5b-h18">Германия</h4>
+                      <img class="country__flag" src="country/flag--germany.img" widht="26" height="18" alt="Германия">
                     </article>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__hashtags hashtags--page-catalog">
+              <div class="travelmate__hashtags hashtags hashtags--page-catalog">
                 <h3 class="visually-hidden">xештеги:</h3>
                 <ul class="hashtags__list">
-                  <li class="hashtags__item">#образование</li>
-                  <li class="hashtags__item">#карьера</li>
-                  <li class="hashtags__item">#учеба</li>
-                  <li class="hashtags__item">#линкедин</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#образование</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#карьера</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#учеба</li>
+                  <li class="hashtags__item text text--s15-wr-c444444-h18">#линкедин</li>
                 </ul>
               </div>
               <div class="travelmate__transport transport">
@@ -269,7 +315,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logotype--blue.png" width="96" height="15" alt="Погнали?">
       </a>
@@ -288,12 +334,11 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <p class="copyright__text text text--s16-wr-c444444-h22">Разработано:</p>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
           <img src="img/htmlacademy.svg" alt="logotype" width="27" height="34">
         </a>
       </div>
     </footer>
-
   </body>
 </html>
