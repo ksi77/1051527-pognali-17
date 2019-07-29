@@ -13,8 +13,8 @@
       <button class="page-header__menu-toggle page-header__menu-toggle--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="page-header__menu-wrapper wrapper">
-        <nav class="main-nav main-nav--open">
+      <div class="page-header__menu-wrapper page-header__menu-wrapper--open">
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="about-us.html">О сервисе</a>
@@ -118,7 +118,6 @@
         <p class="transport-directions__text">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
-        <a class="transport-directions__show-all button button--yellow" href="form.html">Показать все</a>
         <ul class="transport-directions__list">
           <li class="transport-directions__item">
             <article class="country">
@@ -144,6 +143,8 @@
           </li>
           <li class="transport-directions__item">
             <article class="country">
+
+
               <h3 class="country__name">
                 Чехия
               </h3>
@@ -154,9 +155,16 @@
             </article>
           </li>
         </ul>
+        <a class="transport-directions__show-all button button--yellow" href="form.html">Показать все</a>
       </section>
       <section class="travelmates catalog catalog--index-page">
-        <h2 class="catalog__title visually-hidden">Каталог</h2>
+        <h2 class="catalog__title visually-hidden">Попутчики</h2>
+        <p class="catalog__text">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="catalog__text">
+          <strong>Теперь можно легко найти единомышленников!</strong>
+        </p>
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="travelmate">
@@ -270,6 +278,7 @@
             </article>
           </li>
         </ul>
+        <a class="travelmates__show-all button button--yellow" href="catalog.html">Показать всех</a>
       </section>
       <section class="new-profile">
         <a href="form.html">
