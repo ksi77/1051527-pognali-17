@@ -7,12 +7,14 @@
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logotype.png" width="100" height="19" alt="Погнали?">
       </a>
-      <nav class="main-nav main-nav--open">
-        <button class="main-nav__toggle  main-nav_toggle--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+      <button class="page-header__menu-toggle page-header__menu-toggle--hidden" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="page-header__menu-wrapper wrapper">
+        <nav class="main-nav main-nav--open">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="about-us.html">О сервисе</a>
@@ -24,51 +26,49 @@
               <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-        </div>
-        <ul class="main-nav__list user-list user-list--menu-closed">
-          <li class="user-list__item">
-            <a class="user-list__login button button-yellow" href="login.html">АВТОРИЗАЦИЯ</a>
+          <div class="user-menu">
+              <a class="user-menu__login button button--yellow" href="login.html">АВТОРИЗАЦИЯ</a>
+          </div>
+        </nav>
+        <section class="page-header__contacts">
+          <h2 class="visually-hidden">Наши контакты:</h2>
+          <ul class="contacts contacts--page-header contacts--on-white">
+            <li class="contacts__phone">
+              <a class="contacts__phone" href="tel:+78125556666">
+                <span class="contacts__phone visually-hidden">Тел.:</span> +7 (812) 555-66-66
+              </a>
             </li>
-        </ul>
-      </nav>
-      <section class="page-header__contacts">
-        <h2 class="visually-hidden">Наши контакты:</h2>
-        <ul class="page-header__contacts contacts contacts--on-white">
-          <li class="contacts__phone">
-            <a class="contacts__phone" href="tel:+78125556666">
-              <span class="contacts__phone visually-hidden">Тел.:</span> +7 (812) 555-66-66
-            </a>
-          </li>
-          <li class="contacts__email">
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-              <span class="contacts__email visually-hidden">Mail to:</span> mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-      </section>
-      <div class="page-header__social social social--on-white">
-        <h2 class="social__title visually-hidden">Давайте дружить!</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <span class="visually-hidden">Мы в Инстаграме</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+            <li class="contacts__email">
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+                <span class="contacts__email visually-hidden">Mail to:</span> mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="page-header__social social social--on-white">
+          <h2 class="social__title visually-hidden">Давайте дружить!</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!--page-header__menu-wrapper-->
     </header>
 
-    <main>
+    <main class="catalog-page">
       <h1 class="catalog-page-title">Попутчики</h1>
       <section>
         <!-- Здесь будет форма -->
@@ -83,27 +83,23 @@
               <img class="travelmate__img" src="user__tanya-firsova-00000001.img" width="70" height="70" alt="Таня Фирсова">
               <p class="travelmate__friends">1,5 M</p>
               <p class="travelmate__in-favorites travelmate__in-favorites--yes">в избранном</p>
-              <div class="travelmate__level level level--catalog-page">
-                <h4 class="level__title visually-hidden">level:</h4>
-                <p class="level__value">99</p>
-              </div>
               <div class="travelmate__countries countries countries--catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--sri-lanka">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Шри-Ланка</h4>
                       <img class="country__flag" src="country/flag--sri-lanka.img" width="26" height="18" alt="Шри-Ланка">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--catalog-page  country--seychelles">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Сейшеллы</h4>
                       <img class="country__flag" src="country/flag--seychelles.img" width="26" height="18" alt="Сейшеллы">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--catalog-page  country--thai">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Тайланд</h4>
                       <img class="country__flag" src="country/flag--thai.img" width="26" height="18" alt="Таиланд">
                     </article>
@@ -135,6 +131,10 @@
                   </li>
                 </ul>
               </div>
+              <div class="travelmate__level level level--catalog-page">
+                <h4 class="level__title visually-hidden">level:</h4>
+                <p class="level__value">99</p>
+              </div>
               <button class="travelmate__invite button" type="button">Позвать</button>
             </article>
           </li>
@@ -143,21 +143,17 @@
               <h3 class="travelmate__name">Петя Демин</h3>
               <img class="travelmate__img" src="user__petya-demin--00000002.img" width="70" height="70" alt="Петя Демин">
               <p class="travelmate__friends">150</p>
-              <div class="travelmate__level level level--catalog-page">
-                <h4 class="level__title">level:</h4>
-                <p class="level__value">80</p>
-              </div>
               <div class="travelmate__countries countries countries--catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--belgium">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Бельгия</h4>
                       <img class="country__flag" src="country/flag--belgium.img" width="26" height="18" alt="Бельгия">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--czechia">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Чехия</h4>
                       <img class="country__flag" src="country/flag--czechia.img" width="26" height="18" alt="Чехия">
                     </article>
@@ -190,6 +186,10 @@
                   </li>
                 </ul>
               </div>
+              <div class="travelmate__level level level--catalog-page">
+                <h4 class="level__title">level:</h4>
+                <p class="level__value">80</p>
+              </div>
               <button class="travelmate__invite button" type="button">Позвать</button>
             </article>
           </li>
@@ -198,34 +198,30 @@
               <h3 class="travelmate__name">Марк Смолов</h3>
               <img class="travelmate__img" src="user__mark-smolov--00000003.img" width="70" height="70" alt="Марк Смолов">
               <p class="travelmate__friends">1700</p>
-              <div class="travelmate__level level level--catalog-page">
-                <h4 class="level__title">level:</h4>
-                <p class="level__valu8">25</p>
-              </div>
               <div class="travelmate__countries countries countries--catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--usa">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">США</h4>
                       <img class="country__flag" src="country/flag--usa.img" width="26" height="18" alt="США">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--australia">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Австралия</h4>
                       <img class="country__flag" src="country/flag--australia.img" width="26" height="18" alt="Австралия">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--dominiсana">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Доминикана</h4>
                       <img class="country__flag" src="country/flag--dominiсana.img" width="26" height="18" alt="Доминикана">
                     </article>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__hashtags hashtags hashtags--page-catalog">
+              <div class="travelmate__hashtags hashtags hashtags--catalog-page">
                 <h3 class="visually-hidden">xештеги:</h3>
                 <ul class="hashtags__list">
                   <li class="hashtags__item">#реп</li>
@@ -250,6 +246,10 @@
                   </li>
                 </ul>
               </div>
+              <div class="travelmate__level level level--catalog-page">
+                <h4 class="level__title">level:</h4>
+                <p class="level__valu8">25</p>
+              </div>
               <button class="travelmate__invite button" type="button">Позвать</button>
             </article>
           </li>
@@ -259,28 +259,24 @@
               <img class="travelmate__img" src="user__larisa-rogovaya--00000004.img" width="70" height="70" alt="Лариса Роговая">
               <p class="travelmate__online visually-hidden">online</p>
               <p class="travelmate__friends">23</p>
-              <div class="travelmate__level level level--catalog-page">
-                <h4 class="level__title visually-hidden">level:</h4>
-                <p class="level__value">50</p>
-              </div>
               <div class="travelmate__countries countries countries-catalog-page">
                 <h3 class="visually-hidden">хочет посетить:</h3>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--uk">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Великобритания</h4>
                       <img class="country__flag" src="country/flag--uk.img" width="26" height="18" alt="Великобритания">
                     </article>
                   </li>
                   <li class="countries__item">
-                    <article class="country country--catalog-page country--germany">
+                    <article class="country country--catalog-page">
                       <h4 class="country__name">Германия</h4>
                       <img class="country__flag" src="country/flag--germany.img" width="26" height="18" alt="Германия">
                     </article>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__hashtags hashtags hashtags--page-catalog">
+              <div class="travelmate__hashtags hashtags hashtags--catalog-page">
                 <h3 class="visually-hidden">xештеги:</h3>
                 <ul class="hashtags__list">
                   <li class="hashtags__item">#образование</li>
@@ -304,6 +300,10 @@
                   </li>
                 </ul>
               </div>
+              <div class="travelmate__level level level--catalog-page">
+                <h4 class="level__title visually-hidden">level:</h4>
+                <p class="level__value">50</p>
+              </div>
               <button class="travelmate__invite button" type="button">Позвать</button>
             </article>
           </li>
@@ -323,13 +323,19 @@
         <h2 class="social__title visually-hidden">Давайте дружить!</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
         </ul>
       </div>
