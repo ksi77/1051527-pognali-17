@@ -1,0 +1,120 @@
+.travelmate {
+  position: relative;
+  font-size: 21px;
+
+  &--index-page {
+    padding-top: 270px;
+    background-color: white;
+
+    .travelmate__countries-list {
+      position: absolute;
+      top: 270px - 12;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .travelmate__level {
+      position: absolute;
+      top: 16px;
+    }
+
+    .travelmate__img {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &--catalog-page {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .travelmate__wrapper--img {
+      position: relative;
+      display: block;
+      float: left;
+      border-radius: 50%;
+      background-color: gray;
+      width: 70px;
+      height: 70px;
+    }
+
+    .travelmate__countries-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .travelmate__img {
+      position: absolute;
+    }
+
+    .travelmate__wrapper--name {
+      margin-left: 16px;
+      width: 80px;
+    }
+
+    .travelmate__name {
+      text-align: left;
+    }
+
+    .travelmate__hashtags {
+      margin-top: 16px;
+    }
+
+    .travelmate__title-line {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .travelmate__last-line {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .travelmate__text {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: normal;
+      padding: 0;
+    }
+  }
+}
+
+.travelmate__name {
+  padding: 0;
+  margin: 0;
+  color: #1d2e5b;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.travelmate__in-favorites {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  text-indent: -200px;
+
+  &--yes {
+    &::after {
+      position: absolute;
+      right: -5px;
+      bottom: 0;
+      display: block;
+      content: "";
+      width: 31px;
+      height: 31px;
+      background-color: red;
+      border-radius: 50%;
+    }
+  }
+}
+
+.travelmate__friends {
+  margin: 0;
+  padding: 0;
+}

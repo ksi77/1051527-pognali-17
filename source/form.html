@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
 
-  <body>
-    <header class="page-header">
+  <body class="page">
+    <header class="page-header section">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logotype.png" width="100" height="19" alt="Погнали?">
       </a>
@@ -15,35 +16,31 @@
       </button>
       <div class="page-header__menu-wrapper page-header__menu-wrapper--open">
         <nav class="main-nav">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list container">
             <li class="site-list__item">
               <a class="site-list__link" href="about-us.html">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list_link" href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
           <div class="user-menu">
-              <a class="user-menu__login button button--yellow" href="login.html">АВТОРИЗАЦИЯ</a>
+              <a class="user-menu__login button button--light-gold" href="login.html">АВТОРИЗАЦИЯ</a>
           </div>
         </nav>
         <section class="page-header__contacts">
           <h2 class="visually-hidden">Наши контакты:</h2>
-          <ul class="contacts contacts--page-header contacts--on-white">
-            <li class="contacts__phone">
-              <a class="contacts__phone" href="tel:+78125556666">
-                <span class="contacts__phone visually-hidden">Тел.:</span> +7 (812) 555-66-66
-              </a>
-            </li>
-            <li class="contacts__email">
-              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-                <span class="contacts__email visually-hidden">Mail to:</span> mail@htmlacademy.ru
-              </a>
-            </li>
-          </ul>
+          <div class="contacts contacts--page-header contacts--on-white">
+            <a class="contacts__item contacts__item--phone" href="tel:+78125556666">
+              <span class="visually-hidden">Тел.:</span> +7 (812) 555-66-66
+            </a>
+            <a class="contacts__item contacts__item--email" href="mailto:mail@htmlacademy.ru">
+              <span class="visually-hidden">Mail to:</span> mail@htmlacademy.ru
+            </a>
+          </div>
         </section>
         <div class="page-header__social social social--on-white">
           <h2 class="social__title visually-hidden">Давайте дружить!</h2>
@@ -67,12 +64,11 @@
         </div>
       </div><!--page-header__menu-wrapper-->
     </header>
-
-
     <main class="form-page">
-      <h1 class="form-page__title">Направления</h1>
+      <div class="section section--title-wrapper section--round-bottom">
+        <h1 class="form-page__title page-title container">Направления</h1>
+      </div>
     </main>
-
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/logotype--blue.png" width="96" height="15" alt="Погнали?">
