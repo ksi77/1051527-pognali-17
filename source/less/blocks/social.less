@@ -1,8 +1,22 @@
 .social {
-  display: flex;
-  justify-content: center;
+  &--on-white {
+    @color: #cccccc;
+  }
 }
 
 .social__list {
-  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social__item {
+  margin: 0 12px;
+}
+
+.social__link {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: gray;
+  border-radius: 50%;
 }

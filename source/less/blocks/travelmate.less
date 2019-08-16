@@ -4,20 +4,23 @@
 
   &--index-page {
     padding-top: 270px;
+    padding-bottom: 22px;
     background-color: white;
 
-    .travelmate__countries-list {
+    .travelmate__countries {
       position: absolute;
-      top: 270px - 12;
+      top: -12px;
       display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    }
+
+    .travelmate__countries-list {
+      display: flex;
     }
 
     .travelmate__level {
       position: absolute;
-      top: 16px;
+      top: -250px;
+      left: @padding-left--block;
     }
 
     .travelmate__img {
@@ -29,6 +32,7 @@
   &--catalog-page {
     padding-top: 25px;
     padding-bottom: 25px;
+    background-color: white;
 
     .travelmate__wrapper--img {
       position: relative;
@@ -38,12 +42,6 @@
       background-color: gray;
       width: 70px;
       height: 70px;
-    }
-
-    .travelmate__countries-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
     }
 
     .travelmate__img {
@@ -83,8 +81,6 @@
 }
 
 .travelmate__name {
-  padding: 0;
-  margin: 0;
   color: #1d2e5b;
   font-size: 21px;
   font-weight: bold;
@@ -93,28 +89,49 @@
 
 .travelmate__in-favorites {
   position: absolute;
-  margin: 0;
-  padding: 0;
   right: 0;
   bottom: 0;
-  text-indent: -200px;
+  text-indent: -500px;
 
   &--yes {
-    &::after {
-      position: absolute;
-      right: -5px;
-      bottom: 0;
-      display: block;
-      content: "";
-      width: 31px;
-      height: 31px;
-      background-color: red;
-      border-radius: 50%;
-    }
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 31px;
+    height: 31px;
+    background-color: red;
+    border-radius: 50%;
   }
 }
 
-.travelmate__friends {
-  margin: 0;
+.travelmate__online {
+  display: block;
+  margin-right: 9px;
+  text-indent: -500px;
+  width: 5px;
+  height: 5px;
+  background-color: #f97676;
+  border-radius: 50%;
+
+  &--yes {
+    background-color: #81e31e;
+  }
+}
+
+.travelmate__content {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.travelmate__transport {
+  margin-top: 17px;
+}
+
+.travelmate__countries-list {
+  list-style: none;
   padding: 0;
 }

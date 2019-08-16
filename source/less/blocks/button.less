@@ -1,27 +1,37 @@
 .button {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  height: 40px;
+  border: 0;
+  line-height: 40px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+
   &--light-gold {
-    display: block;
-    box-sizing: border-box;
-    width: 190px;
-    border: 0;
     background-color: #ffd74b;
     color: #161c35;
-    border-radius: 30px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
   }
 
   &--show-all {
-    width: 270px;
+    justify-content: flex-start;
     height: 62px;
     line-height: 62px;
     font-size: 18px;
     padding-left: 24px;
     border-radius: 15px;
     text-align: left;
+    text-transform: none;
+  }
+
+  &--gray {
+    background-color: #f3f4f8;
+    color: #1d2e5b;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
   }
 }

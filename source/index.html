@@ -8,7 +8,7 @@
 
   <body class="page">
     <header class="page-header section">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="">
         <img class="page-header__logo-image" src="img/logotype.png" width="100" height="19" alt="Погнали?">
       </a>
       <button class="page-header__menu-toggle page-header__menu-toggle--hidden" type="button">
@@ -44,7 +44,7 @@
         </section>
         <div class="page-header__social social social--on-white">
           <h2 class="social__title visually-hidden">Давайте дружить!</h2>
-          <ul class="social__list">
+          <ul class="social__list container">
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
@@ -95,22 +95,22 @@
       <section class="steps section">
         <h2 class="visually-hidden">Всего несколько шагов:</h2>
           <ol class="steps__list">
-            <li class="steps__item container">
+            <li class="steps__item container block block--bottom-radius-none">
               <p class="steps__text">Выберите направление</p>
             </li>
-            <li class="steps__item container">
+            <li class="steps__item container block block--bottom-radius-none">
               <p class="steps__text">Изучите идеи путешественников</p>
             </li>
-            <li class="steps__item container">
+            <li class="steps__item container block block--bottom-radius-none">
               <p class="steps__text">Находите тех, кто похож на вас</p>
             </li>
-            <li class="steps__item container">
+            <li class="steps__item container block">
               <p class="steps__text">Путешествуйте вместе!</p>
             </li>
         </ol>
       </section>
-      <section class="about section">
-        <div class="container">
+      <section class="about section section--round-bottom">
+        <div class="about__content container">
           <h2 class="about__title">О сервисе</h2>
           <p class="about__text ">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </p>
@@ -118,7 +118,7 @@
           </p>
         </div>
       </section>
-      <section class="transport-directions section">
+      <section class="transport-directions section section--round-bottom">
         <div class="container">
           <h2 class="transport-directions__title">Направления</h2>
           <p class="transport-directions__text">
@@ -129,12 +129,14 @@
           <li class="transport-directions__item">
             <article class="country country--article block">
               <img class="country__image" src="country/img--thai.img" width="270" height="110" alt="Таиланд">
-              <div class="country__content container block block--white">
-                <h3 class="country__name">
-                  Тайланд
-                </h3>
+              <div class="country__content container block">
                 <img class="country__flag" src="country/flag--thai.img" width="35" height="24" alt="Таиланд">
-                <p class="country__text">Джунгли зовут</p>
+                <div class="country__wrapper--left-column">
+                  <h3 class="country__name">
+                    Тайланд
+                  </h3>
+                  <p class="country__text">Джунгли зовут</p>
+                </div>
                 <p class="country__users-count ">18321<span class="visually-hidden">человек хотят посетить</span></p>
               </div>
             </article>
@@ -142,12 +144,14 @@
           <li class="transport-directions__item">
             <article class="country country--article block">
               <img class="country__image" src="country/img--france.img" width="270" height="110" alt="Франция">
-              <div class="country__content container block block--white">
-                <h3 class="country__name">
-                    Франция
-                </h3>
+              <div class="country__content container block">
                 <img class="country__flag" src="country/flag--france.img" width="35" height="24" alt="Франция">
-                <p class="country__text">Трэ бьен, манифик!</p>
+                <div class="country__wrapper--left-column">
+                  <h3 class="country__name">
+                    Франция
+                  </h3>
+                  <p class="country__text">Трэ бьен, манифик!</p>
+                </div>
                 <p class="country__users-count">12518<span class="visually-hidden">человек хотят посетить</span></p>
               </div>
             </article>
@@ -155,12 +159,14 @@
           <li class="transport-directions__item">
             <article class="country country--article block">
               <img class="country__image" src="country/img--czechia.img" width="270" height="110" alt="Чехия">
-              <div class="country__content container block block--white">
-                <h3 class="country__name">
-                  Чехия
-                </h3>
+              <div class="country__content container block">
                 <img class="country__flag" src="country/flag--czechia.img" width="35" height="24" alt="Чехия">
-                <p class="country__text">Закоулки старой Европы</p>
+                <div class="country__wrapper--left-column">
+                  <h3 class="country__name">
+                    Чехия
+                  </h3>
+                  <p class="country__text">Закоулки старой Европы</p>
+                </div>
                 <p class="country__users-count">5326<span class="visually-hidden">человек хотят посетить</span></p>
               </div>
             </article>
@@ -168,7 +174,7 @@
         </ul>
         <a class="transport-directions__show-all button button--light-gold button--show-all" href="form.html">Показать все</a>
       </section>
-      <section class="index-page__catalog catalog section">
+      <section class="index-page__catalog catalog section section--round-bottom">
         <div class="container">
           <h2 class="catalog__title">Попутчики</h2>
           <p class="catalog__text">
@@ -182,7 +188,8 @@
           <li class="catalog__item">
             <article class="travelmate travelmate--index-page block">
               <img class="travelmate__img" src="user__tanya-firsova-00000001.img" width="270" height="270" alt="Таня Фирсова">
-              <div class="container">
+              <div class="travelmate__content container">
+                <p class="travelmate__online">offline</p>
                 <h3 class="travelmate__name">Таня Фирсова</h3>
                 <div class="travelmate__level level level--index-page">
                   <h4 class="level__title visually-hidden">level:</h4>
@@ -242,7 +249,8 @@
           <li class="catalog__item">
             <article class="travelmate travelmate--index-page block">
               <img class="travelmate__img " src="user__petya-demin-00000002.img" width="270" height="270" alt="Петя Демин">
-              <div class="container">
+              <div class="travelmate__content container">
+                <p class="travelmate__online travelmate__online--yes">online</p>
                 <h3 class="travelmate__name">Петя Демин</h3>
                 <div class="travelmate__level level level--index-page">
                   <h4 class="level__text visually-hidden">level:</h4>
@@ -296,46 +304,52 @@
         </ul>
         <a class="travelmates__show-all button button--light-gold button--show-all" href="catalog.html">Показать всех</a>
       </section>
-      <section class="new-profile section">
-        <a class="new-profile__create-profile" href="form.html">
-          <h2 class="new-profile__title container">Добавьте свой профиль</h2>
+      <section class="new-profile section section--round-bottom">
+        <div class="new-profile__content container">
+          <a class="new-profile__create-profile" href="form.html">
+            <h2 class="new-profile__title">Добавьте свой профиль</h2>
+          </a>
+          <ol class="rates rates__list">
+            <li class="rates__item">
+              <p class="rates__text">Базовое размещение</p>
+              <p class="rates__text">Бесплатно</p>
+            </li>
+            <li class="rates__item">
+              <p class="rates__text">Вывод на первых позициях</p>
+              <p class="rates__text">99 руб./мес</p>
+            </li>
+            <li class="rates__item">
+              <p class="rates__text">Кастомный цвет карточки</p>
+              <p class="rates__text">59 руб./мес</p>
+            </li>
+          </ol>
+        </div>
+        <a class="new-profile__show-business-rates button container" href="rates-for-business.html">
+          Показать тарифы для бизнеса
         </a>
-        <ol class="rates rates__list">
-          <li class="rates__item container">
-            <p class="rates__text">Базовое размещение</p>
-            <p class="rates__text">Бесплатно</p>
-          </li>
-          <li class="rates__item container">
-            <p class="rates__text">Вывод на первых позициях</p>
-            <p class="rates__text">99 руб./мес</p>
-          </li>
-          <li class="rates__item container">
-            <p class="rates__text">Кастомный цвет карточки</p>
-            <p class="rates__text">59 руб./мес</p>
-          </li>
-        </ol>
-        <a class="new-profile__show-business-rates container" href="rates-for-business.html">Показать тарифы для бизнеса</a>
-        <section class="business-rates modal">
-          <h2 class="business-rates__title">Бизнес-тарифы</h2>
-          <ul class="business-rates__list">
-            <li class="business-rates__item  container">
-              <p class="business-rates__text">Реклама у блоггера</p>
-              <p class="business-rates__text"> 300 000 руб./пост</p>
-            </li>
-            <li class="business-rates__item container">
-              <p class="business-rates__text">Накрутка подписчиков</p>
-              <p class="business-rates__text"> от 1 руб./шт.</p>
-            </li>
-            <li class="business-rates__item container">
-              <p class="business-rates__text">Лайки от ботов</p>
-              <p class="business-rates__text"> от 20 коп./лайк</p>
-            </li>
-            <li class="business-rates__item container">
-              <p class="business-rates__text">Ваш продакт-плейсмент</p>
-              <p class="business-rates__text"> Индивидуально</p>
-            </li>
-          </ul>
-          <button class="business-rates__close button button--white" type="button">Закрыть окно</button>
+        <section class="business-rates modal block">
+          <div class="business-rates__content container">
+            <h2 class="business-rates__title">Бизнес-тарифы</h2>
+            <ul class="business-rates__list">
+              <li class="business-rates__item ">
+                <p class="business-rates__text">Реклама у блоггера</p>
+                <p class="business-rates__text"> 300 000 руб./пост</p>
+              </li>
+              <li class="business-rates__item">
+                <p class="business-rates__text">Накрутка подписчиков</p>
+                <p class="business-rates__text"> от 1 руб./шт.</p>
+              </li>
+              <li class="business-rates__item">
+                <p class="business-rates__text">Лайки от ботов</p>
+                <p class="business-rates__text"> от 20 коп./лайк</p>
+              </li>
+              <li class="business-rates__item">
+                <p class="business-rates__text">Ваш продакт-плейсмент</p>
+                <p class="business-rates__text"> Индивидуально</p>
+              </li>
+            </ul>
+          </div>
+          <button class="business-rates__close button container" type="button">Закрыть окно</button>
         </section>
       </section>
       <section>
@@ -357,7 +371,7 @@
       </a>
       <div class="page-footer__social social">
         <h2 class="social__title visually-hidden">Давайте дружить!</h2>
-        <ul class="social__list">
+        <ul class="social__list container">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
