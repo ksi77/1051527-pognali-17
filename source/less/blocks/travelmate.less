@@ -1,4 +1,6 @@
 .travelmate {
+  .block;
+  .container;
   position: relative;
   font-size: 21px;
 
@@ -89,24 +91,24 @@
 
 .travelmate__in-favorites {
   position: absolute;
-  right: 0;
+  right: -5px;
   bottom: 0;
+  display: block;
+  width: 31px;
+  height: 31px;
   text-indent: -500px;
+  border-radius: 50%;
 
   &--yes {
-    position: absolute;
-    right: -5px;
-    bottom: 0;
-    display: block;
-    content: "";
-    width: 31px;
-    height: 31px;
     background-color: red;
-    border-radius: 50%;
+  }
+
+  &--no {
+    background-color: blue;
   }
 }
 
-.travelmate__online {
+.travelmate__status {
   display: block;
   margin-right: 9px;
   text-indent: -500px;
@@ -115,7 +117,7 @@
   background-color: #f97676;
   border-radius: 50%;
 
-  &--yes {
+  &--online {
     background-color: #81e31e;
   }
 }
@@ -134,4 +136,10 @@
 .travelmate__countries-list {
   list-style: none;
   padding: 0;
+}
+
+.travelmate__friends {
+  color: #161c35;
+  font-size: 14px;
+  font-weight: bold;
 }
