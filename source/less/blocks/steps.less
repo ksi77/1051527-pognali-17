@@ -1,5 +1,3 @@
-@padding__under-next: @border-radius--block  + 25;
-
 .steps {
   position: relative;
   background-color: #161c35;
@@ -21,12 +19,13 @@
 }
 
 .steps__item {
-  .block;
+  .bordered;
   .container;
+  .layer-above--block;
   position: relative;
   counter-increment: item;
   padding-top: 23px;
-  padding-bottom: @padding__under-next;
+  padding-bottom: 25px + @border-radius--block;
   vertical-align: middle;
 
   &::after {
@@ -40,23 +39,24 @@
     font-weight: bold;
   }
 
+  &:not(:last-child) {
+    .bottom-radius-none;
+  }
+
   &:nth-child(1) {
     background-color: #ff8d30;
   }
 
   &:nth-child(2) {
     background-color: #ffa530;
-    .layer-above--block;
   }
 
   &:nth-child(3) {
     background-color: #ffbd30;
-    .layer-above--block;
   }
 
   &:nth-child(4) {
     background-color: #ffd74b;
     padding-bottom: 25px;
-    .layer-above--block;
   }
 }

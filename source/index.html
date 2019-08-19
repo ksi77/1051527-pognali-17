@@ -68,28 +68,28 @@
     <main class="index-page">
       <div class="index-page__title-wrapper page__section page__section--round-bottom">
         <h1 class="index-page__title">В путешествие с крутыми попутчиками!</h1>
-        <div class="index-page__wrapper">
-        <section class="index-page__contacts">
-          <h2 class="visually-hidden">Наши контакты:</h2>
-          <div class="contacts contacts--index-page contacts--on-blue">
-            <a class="contacts__item contacts__item--phone" href="tel:+78125556666">
-              <span class="visually-hidden">Тел.: +7 (812) 555-66-66</span>
-            </a>
-            <a class="contacts__item contacts__item--email" href="mailto:mail@htmlacademy.ru">
-              <span class="visually-hidden">Mail to: mail@htmlacademy.ru</span>
-            </a>
-          </div>
-        </section>
-        <div class="index-page__user-menu user-menu">
+        <div class="index-page__login-contacts-wrapper">
+          <section class="index-page__contacts">
+            <h2 class="visually-hidden">Наши контакты:</h2>
+            <div class="contacts contacts--index-page contacts--on-blue">
+              <a class="contacts__item contacts__item--phone" href="tel:+78125556666">
+                <span class="visually-hidden">Тел.: +7 (812) 555-66-66</span>
+              </a>
+              <a class="contacts__item contacts__item--email" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">Mail to: mail@htmlacademy.ru</span>
+              </a>
+            </div>
+          </section>
+          <div class="index-page__user-menu user-menu">
             <a class="user-menu__login button button--light-gold" href="login.html">АВТОРИЗАЦИЯ</a>
+          </div>
         </div>
-      </div>
       </div>
       <section class="reviews page__section">
         <h2 class="visually-hidden">Отзывы о нас:</h2>
         <blockquote class="reviews__item">
           <p class="reviews__text">«Лучшее приложение,  что я видел в жизни!»</p>
-          <cite class="reviews__author-name">Мурат Эльтазин главный редактор  газеты «гаджетлайф»</cite>
+          <cite class="reviews__text reviews__author-name">Мурат Эльтазин главный редактор  газеты «гаджетлайф»</cite>
         </blockquote>
       </section>
       <section class="steps page__section">
@@ -189,8 +189,10 @@
             <article class="travelmate travelmate--index-page">
               <img class="travelmate__img" src="user__tanya-firsova-00000001.img" width="270" height="270" alt="Таня Фирсова">
               <div class="travelmate__content">
-                <p class="travelmate__status">offline</p>
-                <h3 class="travelmate__name">Таня Фирсова</h3>
+                <h3 class="travelmate__name">
+                  <span class="travelmate__status">offline</span>
+                  Таня Фирсова
+                </h3>
                 <div class="travelmate__level level level--index-page">
                   <h4 class="level__title visually-hidden">level:</h4>
                   <p class="level__value">99</p>
@@ -250,8 +252,10 @@
             <article class="travelmate travelmate--index-page">
               <img class="travelmate__img " src="user__petya-demin-00000002.img" width="270" height="270" alt="Петя Демин">
               <div class="travelmate__content">
-                <p class="travelmate__status travelmate__status--online">online</p>
-                <h3 class="travelmate__name">Петя Демин</h3>
+                <h3 class="travelmate__name">
+                  <span class="travelmate__status travelmate__status--online">online</span>
+                  Петя Демин
+                </h3>
                 <div class="travelmate__level level level--index-page">
                   <h4 class="level__text visually-hidden">level:</h4>
                   <p class="level__value">80</p>
@@ -259,6 +263,7 @@
                 <div class="travelmate__countries countries countries--index-page">
                   <p class="visually-hidden">хочет посетить:</p>
                   <ul class="travelmate__countries-list">
+                    <li>
                       <div class="country country--index-page">
                         <h4 class="visually-hidden">Бельгия</h4>
                         <img class="country__flag" src="country/flag--belgium.img" width="35" height="24" alt="Бельгия">

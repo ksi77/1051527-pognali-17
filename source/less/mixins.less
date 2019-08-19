@@ -1,23 +1,18 @@
-.layer-above--block {
-  margin-top: @border-radius--block * (-1);
+.layer-above--block() {
+  margin-top: -@border-radius--block;
 }
 
-.block {
-  display: flex;
-  flex-grow: 1;
-  flex-wrap: wrap;
+.bordered() {
   border-radius: @border-radius--block;
   overflow: hidden;
 }
 
-.bottom-radius-none {
+.bottom-radius-none() {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.container {
+.container() {
   display: flex;
-  flex-grow: 1;
   padding: 0 25px;
-  flex-wrap: wrap;
 }
