@@ -8,6 +8,7 @@
 
   &--article {
     .bordered;
+    .container;
     padding-top: 110px;
     background-color: gray;
 
@@ -47,8 +48,9 @@
 
 .country__content {
   .bordered;
-  .layer-above--block;
   .container;
+  margin-top: -@border-radius--block;
+  padding: @padding-content;
   justify-content: space-between;
   background-color: white;
   position: relative;
@@ -60,4 +62,56 @@
   font-size: 16px;
   color: rgba(68, 68, 68, 0.3);
   font-weight: 500;
+}
+
+@media (min-width: @tablet-width) {
+  .country {
+    &--article {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+      padding-right: 186px;
+
+      .country__flag {
+        width: 70px;
+        height: 47px;
+        top: 50%;
+        left: 100%;
+        margin-top: -23px;
+        margin-left: -35px;
+      }
+    }
+  }
+
+  .country__content {
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .country__image {
+    right: 0;
+    width: 186px;
+    height: 140px;
+  }
+
+  .country__name {
+    font-size: 24px;
+  }
+
+  .country__text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .country {
+    &--article {
+      width: 600px;
+    }
+  }
+
+  .country__content {
+    width: 373px;
+    margin: 0;
+  }
 }

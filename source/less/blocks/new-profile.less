@@ -6,6 +6,7 @@
 
 .new-profile__content {
   .container;
+  padding: 0 @padding-content;
   flex-direction: column;
 }
 
@@ -28,5 +29,23 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
-  padding-top: 31px;
+  margin-top: 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .new-profile__title {
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .new-profile__show-business-rates {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .new-profile__content {
+    padding: 0 @padding-content--desktop;
+  }
 }

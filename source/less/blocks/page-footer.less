@@ -4,11 +4,32 @@
   border-top-right-radius: @border-radius--section;
 }
 
-.page-footer__copyright {
+.page-footer__content {
   .container;
+  flex-direction: column;
+  align-items: center;
 }
 
-.page-footer__logo {
+.page-footer__copyright {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copyright__text {
+    font-size: 20px;
+  }
+
+  .page_footer__logo,
+  .page-footer__copyright,
+  .page-footer__social {
+    width: auto;
+  }
 }

@@ -1,4 +1,5 @@
 .travelmate {
+  box-sizing: border-box;
   .bordered;
   position: relative;
   font-size: 21px;
@@ -40,32 +41,36 @@
   }
 
   &--catalog-page {
-    .container;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 100%;
     background-color: white;
+    padding: @padding-content;
 
-    .travelmate__img-wrapper {
-      position: relative;
-      display: block;
-      border-radius: 50%;
-      background-color: gray;
-      width: 70px;
-      height: 70px;
+    .travelmate__content {
+      align-items: flex-start;
+      padding: 0;
     }
 
     .travelmate__img {
       position: absolute;
+      left: 0;
+      top: 0;
     }
 
-    .travelmate__name-wrapper {
-      margin-left: 16px;
-      width: 80px;
+    .travelmate__in-favorites {
+      position: absolute;
+      left: 50px;
+      top: 50px;
     }
 
     .travelmate__name {
       text-align: left;
+      flex-direction: row-reverse;
+      font-size: 20px;
+    }
+
+    .travelmate__name,
+    .travelmate__friends {
+      padding-left: 90px;
     }
 
     .travelmate__hashtags {
@@ -91,21 +96,33 @@
   }
 }
 
+.travelmate__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 @padding-content;
+  align-items: center;
+  justify-content: center;
+}
+
 .travelmate__name {
+  display: flex;
+  order: -1;
+  align-items: center;
   color: #1d2e5b;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
+  margin: 0;
 }
 
 .travelmate__in-favorites {
-  position: absolute;
-  right: -5px;
-  bottom: 0;
   display: block;
+  margin: 0;
   width: 31px;
   height: 31px;
   text-indent: -500px;
+  overflow: hidden;
   border-radius: 50%;
 
   &--yes {
@@ -121,6 +138,7 @@
   display: block;
   margin-right: 9px;
   text-indent: -500px;
+  overflow: hidden;
   width: 5px;
   height: 5px;
   background-color: #f97676;
@@ -130,15 +148,6 @@
     background-color: #81e31e;
   }
 }
-
-.travelmate__content {
-  .container;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-
 
 .travelmate__transport {
   margin-top: 17px;
@@ -153,4 +162,142 @@
   color: #161c35;
   font-size: 14px;
   font-weight: bold;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .travelmate__content {
+    justify-content: space-between;
+  }
+
+  .travelmate__name {
+    font-size: 24px;
+  }
+
+  .travelmate__friends {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .travelmate {
+    &--index-page {
+      display: flex;
+      height: 100%;
+      width: auto;
+    }
+
+    &--catalog-page {
+      padding: 0 @padding-content--tablet;
+
+      .travelmate__content {
+        align-items: center;
+      }
+
+      .travelmate__name {
+        font-size: 30px;
+      }
+
+      .travelmate__name,
+      .travelmate__friends {
+        padding-left: 0;
+      }
+
+      .travelmate__last-line {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .travelmate__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 190px;
+        height: 190px;
+        .bordered;
+      }
+
+      .travelmate__countries {
+        width: 100%;
+        margin-top: 100px;
+      }
+
+      .travelmate__countries-list {
+        display: flex;
+      }
+
+      .travelmate__in-favorites,
+      .travelmate__friends,
+      .travelmate__invite {
+        position: absolute;
+        top: 135px;
+      }
+
+      .travelmate__invite {
+        width: 148px;
+        left: 200px;
+      }
+
+      .travelmate__in-favorites {
+        width: 50px;
+        height: 50px;
+        left: 350px;
+      }
+
+      .travelmate__friends {
+        left: 400px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelmate {
+    &--catalog-page {
+      .travelmate__content {
+        padding-left: 285px;
+        align-items: flex-start;
+      }
+
+      .travelmate__img {
+        width: 285px;
+        height: 285px;
+      }
+
+      .travelmate__invite {
+        position: static;
+        margin-top: 48px;
+      }
+
+      .travelmate__in-favorites {
+        left: 450px;
+      }
+
+      .travelmate__friends {
+        left: 500px;
+      }
+
+      .travelmate__countries {
+        position: absolute;
+        top: 0;
+        left: 600px;
+        display: block;
+        width: 200px;
+        margin: 0;
+      }
+
+      .travelmate__countries-list {
+        display: block;
+      }
+
+      .travelmate__last-line {
+        flex-direction: row;
+        top: auto;
+        bottom: 0;
+        left: 600px;
+      }
+    }
+  }
 }

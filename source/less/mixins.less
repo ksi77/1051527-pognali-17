@@ -1,7 +1,3 @@
-.layer-above--block() {
-  margin-top: -@border-radius--block;
-}
-
 .bordered() {
   border-radius: @border-radius--block;
   overflow: hidden;
@@ -14,5 +10,45 @@
 
 .container() {
   display: flex;
-  padding: 0 25px;
+  width: @content-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @content-width--desktop;
+  }
+}
+
+
+.contacts-style--on-blue() {
+  position: relative;
+  display: block;
+  text-indent: -300px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--email {
+    &::before {
+      background-color: #ffbd30;
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-color: #ff8d30;
+    }
+  }
 }

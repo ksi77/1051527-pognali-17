@@ -2,8 +2,13 @@
   background-color: #edeff6;
 }
 
-.transport-directions__title-wrapper {
+.transport-directions__content {
   .container;
+  flex-direction: column;
+}
+
+.transport-directions__title-wrapper {
+  padding: 0 @padding-content;
   flex-direction: column;
 }
 
@@ -20,9 +25,44 @@
 
 .transport-directions__list {
   list-style: none;
+  margin: 0;
   padding: 0;
+  margin-bottom: -10px;
 }
 
 .transport-directions__item {
   margin-bottom: 10px;
+}
+
+.transport-directions__show-all {
+  .container;
+}
+
+@media (min-width: @tablet-width) {
+  .transport-directions__title {
+    font-size: 45px;
+  }
+
+  .transport-directions__text {
+    font-size: 28px;
+    width: 340px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transport-directions__content {
+    padding: 0 @padding-content--desktop;
+    flex-direction: row;
+  }
+
+  .transport-directions__list {
+    order: -1;
+  }
+
+  .transport-directions__show-all {
+    position: absolute;
+    bottom: 0;
+    left: 700px;
+    width: 274px;
+  }
 }

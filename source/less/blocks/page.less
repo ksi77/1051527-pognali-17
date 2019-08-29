@@ -1,5 +1,26 @@
 .page {
   font-family: "Blogger Sans", "Arial", sans-serif;
+  min-width: 320px;
+  margin: 0;
+}
+
+.page__section {
+  box-sizing: content-box;
+
+  &--round-bottom {
+    border-bottom-left-radius: @border-radius--section;
+    border-bottom-right-radius: @border-radius--section;
+  }
+
+  &--title {
+    background-color: #161c35;
+  }
+}
+
+.page__content {
+  .container;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page__title {
@@ -24,20 +45,21 @@
   }
 }
 
-.page__section {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  width: 320px;
-  box-sizing: border-box;
+.page__link {
+  display: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-  &--round-bottom {
-    border-bottom-left-radius: @border-radius--section;
-    border-bottom-right-radius: @border-radius--section;
+@media (min-width: @tablet-width) {
+  .page__section {
+    padding: 0 @padding-side--tablet;
   }
 
-  &--title-wrapper {
-    background-color: #161c35;
+  .page__link {
+    display: block;
   }
 }

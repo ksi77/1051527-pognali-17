@@ -1,19 +1,19 @@
 .reviews {
   background-color: #161c35;
   color: white;
-  font-size: 15px;
-  line-height: 22px;
   font-weight: 300;
 }
 
 .reviews__item {
-  .container();
+  display: flex;
   flex-direction: column;
   padding-top: 25px;
   margin: 0;
 }
 
 .reviews__text {
+  font-size: 15px;
+  line-height: 22px;
   width: 155px;
 }
 
@@ -21,4 +21,16 @@
   display: block;
   font-weight: bold;
   font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__text {
+    width: 257px;
+    font-size: 28px;
+  }
+
+  .reviews__author-name {
+    width: 243px;
+    font-size: 21px;
+  }
 }

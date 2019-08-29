@@ -11,3 +11,21 @@
   color: #192144;
   font-weight: 500;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    padding: 0 18px;
+    color: white;
+  }
+}

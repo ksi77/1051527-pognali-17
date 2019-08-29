@@ -20,3 +20,46 @@
   width: 208px;
   font-weight: 300;
 }
+
+.about__more-info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about__title {
+    font-size: 45px;
+  }
+
+  .about__content {
+    margin: 0;
+  }
+
+  .about__text {
+    font-size: 28px;
+    width: 300px;
+
+    strong {
+      font-size: 21px;
+    }
+  }
+
+  .about__more-info {
+    display: block;
+    width: 274px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__text {
+    width: 610px;
+
+    strong {
+      width: 410px;
+    }
+  }
+}

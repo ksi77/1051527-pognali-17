@@ -1,7 +1,4 @@
 .social {
-  display: flex;
-  justify-content: center;
-
   &--on-white {
     @color: #cccccc;
   }
@@ -35,4 +32,29 @@
   height: 21px;
   background-color: gray;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    &--on-white {
+      .social__item {
+        margin-left: 0;
+        margin-right: 35px;
+      }
+
+      .social__link {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &--footer {
+      justify-content: space-between;
+
+      .social__link {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
 }
