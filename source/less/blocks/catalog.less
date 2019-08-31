@@ -68,7 +68,7 @@
     line-height: 33px;
     width: 425px;
 
-    strong {
+    .catalog__strong {
       font-size: 21px;
       width: 200px;
       line-height: 25px;
@@ -78,11 +78,22 @@
 
 @media (min-width: @desktop-width) {
   .catalog__content {
-    width: 950px;
+    flex-direction: row;
+    padding: @padding-content--desktop;
+  }
+
+  .catalog {
+    &--catalog-page {
+      .catalog__content {
+        flex-direction: column;
+        padding: 0 430px 0 0;
+      }
+    }
   }
 
   .catalog__title-wrapper {
     order: -1;
+    padding: 0;
   }
 
   .catalog__list {

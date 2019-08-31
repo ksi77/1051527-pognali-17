@@ -100,6 +100,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   padding: 0 @padding-content;
   align-items: center;
   justify-content: center;
@@ -190,7 +191,7 @@
       padding: 0 @padding-content--tablet;
 
       .travelmate__content {
-        align-items: center;
+        align-items: flex-start;
       }
 
       .travelmate__name {
@@ -198,8 +199,8 @@
       }
 
       .travelmate__name,
-      .travelmate__friends {
-        padding-left: 0;
+      .travelmate__hashtags {
+        padding-left: 223px;
       }
 
       .travelmate__last-line {
@@ -220,7 +221,6 @@
       }
 
       .travelmate__countries {
-        width: 100%;
         margin-top: 100px;
       }
 
@@ -237,17 +237,18 @@
 
       .travelmate__invite {
         width: 148px;
-        left: 200px;
+        left: 220px;
       }
 
       .travelmate__in-favorites {
         width: 50px;
         height: 50px;
-        left: 350px;
+        left: 367px;
       }
 
       .travelmate__friends {
-        left: 400px;
+        left: 417px;
+        padding-left: 0;
       }
     }
   }
@@ -264,6 +265,11 @@
       .travelmate__img {
         width: 285px;
         height: 285px;
+      }
+
+      .travelmate__name,
+      .travelmate__hashtags {
+        padding-left: 0;
       }
 
       .travelmate__invite {
